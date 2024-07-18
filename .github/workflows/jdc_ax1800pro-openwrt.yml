@@ -1,9 +1,13 @@
-name: ARMv8 Docker OpenWrt
+name: jdc_ax1800pro Docker OpenWrt
+
+#on:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: 0 23 * * 5
 
 on:
+  repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: 0 23 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
