@@ -9,6 +9,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
+#  workflow_dispatch:
+#  schedule:
+    - cron: 0 0 * * 6
+
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
