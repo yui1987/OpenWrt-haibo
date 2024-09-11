@@ -1,9 +1,13 @@
 name: ARMv8 Package
 
 on:
+  repository_dispatch:
   workflow_dispatch:
+
+#  workflow_dispatch:
 #  schedule:
-#    - cron: 0 15 * * *
+    - cron: 0 0 * * 6
+    
   watch:
     types: started
 
