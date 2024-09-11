@@ -1,12 +1,15 @@
 name: Rockchip OpenWrt
 
 on:
+# 手动编译
   repository_dispatch:
   workflow_dispatch:
 
+# 自动编译：每天早上4点
 #  workflow_dispatch:
 #  schedule:
-    - cron: 0 0 * * 6
+#    - cron: 0 0 * * 6
+
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
